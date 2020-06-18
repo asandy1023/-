@@ -1,6 +1,6 @@
 /***@name StatObject
 */
-var restaurant = [];
+var restaurant = [], ff;
 
 function enterstore() {
   $.getJSON('restaurant.json', function (data) {
@@ -15,13 +15,17 @@ function enterstore() {
 }
 
 
-
+/*var fso = new ActiveXObject(Scripting.FileSystemObject);
+var f = fso.createtextfile("aa.txt", 2, true);*/
 
 function clickspan(f) {
+
+  ff = f;
   //alert("I am an alert box!");
   $("#restaurantData").empty();
   $("#menu").empty();
-
+  $("#item").empty();
+  a = [];
   //restaurantData
   $.getJSON('restaurant.json', function (data) {
     $.each(data.restaurant, function (i, d) {
@@ -34,43 +38,103 @@ function clickspan(f) {
 
   });
   var menu = [];
-  var ad = ['A', 'B', 'C', 'D'];
+  //var ad = ['A', 'B', 'C', 'D'];
   //menu
+
   $.getJSON('restaurant.json', function (data) {
     $.each(data.menu, function (i, d) {
 
       if (f == d.id) {
-
-        for (var y = 0; y < 3; y++) {
-          for (var y = 0; y < 4; y++) {
-            var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" onclick="itonplus()">' + d.A + '</p>'
-            $(tblRow).appendTo("#menu");
-            console.log(1);
+        var key, count = 0;
+        for (key in d) {
+          if (d.hasOwnProperty(key)) {
+            count++;
           }
         }
+        for (var y = 1; y < count; y++) {
+
+          var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" onclick="itonplus(' + y + ');">' + d[y] + '</p>'
+          $(tblRow).appendTo("#menu");
+          console.log(1);
+        }
+        /*var gg = "ABCDEFG";
+        for (var y = 0; y < 6; y++) {
+            var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" onclick="itonplus()">' + gg[y] + '</p>'
+            $(tblRow).appendTo("#menu");
+        }*/
 
       }
     });
 
   });
-
+  //f.close();
 }
-var a = [], times = 0;
-var b = [];
+var a = [],c=10, tt = 0;
+var b = [0];
 
-function itonplus(i, iton) {
-  a[times] = iton;
-  b[iton]++;
-  times++;
-  updata();
+
+
+a[1]=10;
+function itonplus(y) {
+  a[y] ++;
+  
+  //var fso = new ActiveXObject(Scripting.FileSystemObject);
+  //var f = fso.opentextfile("aa.txt", 1, true);
+  //times++;
+
+  console.log(y);
+  updata(y);
 }
 
-function updata() {
+function updata(y) {
+
   $("#item").empty();
-  for (var i = 0; i < a.length; i++) {
-    var tblRow = '<p style=" padding-bottom:40px;"> ' + a[i] + ": " + b[a[i]] + ' </p>'
-    $(tblRow).appendTo("#item");
-  }
+
+
+  $.getJSON('restaurant.json', function (data) {
+    $.each(data.menu, function (i, d) {
+
+
+
+      if (ff == d.id) {
+        for (var u = 1; u < a.length; u++) {
+          
+          if (a[u] != 0) {
+            var tblRow = '<p style=" padding-bottom:40px;">' + d[u] + "數量:" + c + '</p>'
+            c++;
+            $(tblRow).appendTo("#item");
+          }
+
+        }
+
+
+      }
+
+
+      /*var gg = "ABCDEFG";
+      for (var y = 0; y < 6; y++) {
+          var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" onclick="itonplus()">' + gg[y] + '</p>'
+          $(tblRow).appendTo("#menu");
+      }*/
+
+
+    });
+
+  });
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
 
 
