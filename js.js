@@ -25,7 +25,7 @@ function clickspan(f) {
   $("#restaurantData").empty();
   $("#menu").empty();
   $("#item").empty();
-  a = [];
+  //a = [];
   //restaurantData
   $.getJSON('restaurant.json', function (data) {
     $.each(data.restaurant, function (i, d) {
@@ -69,12 +69,12 @@ function clickspan(f) {
   });
   //f.close();
 }
-var a = new Array(),c=10, tt = 0;
+var a = new Int32Array(10), tt = 0;
 var b = [0];
 
 
 
-a[1]=10;
+
 function itonplus(y) {
   a[y] ++;
   
@@ -97,11 +97,10 @@ function updata(y) {
 
 
       if (ff == d.id) {
-        for (var u = 1; u < a.length; u++) {
+        for (var u = new Number(1); u < 5; u++) {
           
           if (a[u] != 0) {
-            var tblRow = '<p style=" padding-bottom:40px;">' + d[u] + "數量:" + a[Number(u)] + '</p>'
-            c++;
+            var tblRow = '<p style=" padding-bottom:40px;">' + d[u] + "數量:" + a[u] + '</p>'
             $(tblRow).appendTo("#item");
           }
 
