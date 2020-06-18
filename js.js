@@ -69,7 +69,7 @@ function clickspan(f) {
   });
   //f.close();
 }
-var a = [],c=10, tt = 0;
+var a = [0],c=10, tt = 0;
 var b = [0];
 
 
@@ -100,7 +100,7 @@ function updata(y) {
         for (var u = 1; u < a.length; u++) {
           
           if (a[u] != 0) {
-            var tblRow = '<p style=" padding-bottom:40px;">' + d[u] + "數量:" + c + '</p>'
+            var tblRow = '<p style=" padding-bottom:40px;">' + d[u] + "數量:" + a[u] + '</p>'
             c++;
             $(tblRow).appendTo("#item");
           }
