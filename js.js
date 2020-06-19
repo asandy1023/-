@@ -79,11 +79,11 @@ function clickspan(f) {
   });
   //f.close();
 }
-var menu_amount = new Int32Array(100),
+var menu_amount = new Int32Array(40),
   tt = 0;
 var b = [0];
 
-for (var zero = 0; zero < 100; zero++) {
+for (var zero = 0; zero < 40; zero++) {
   menu_amount[zero] = 0;
 }
 
@@ -119,7 +119,7 @@ function updata(y) {
     $.each(data.menu, function (i, d) {
 
       if (ff == d.id) {
-        for (var u = new Number(1); u < 100; u++) {
+        for (var u = new Number(1); u < 40; u++) {
 
           if (menu_amount[u] != 0) {
             var tblRow = '<p style=" padding-bottom:40px;">' + d[u] + "數量:" + menu_amount[u] + '</p>'
@@ -149,7 +149,7 @@ function shopping_car_click() {
     $.each(data.menu, function (i, d) {
 
       if (ff == d.id) {
-        for (var u = new Number(1); u < 100; u++) {
+        for (var u = new Number(1); u < 40; u++) {
 
           if (menu_amount[u] != 0) {
             var tblRow = '<p style=" padding-bottom:40px;font-size:30px;">' + d[u] + "數量:" + menu_amount[u] + '</p>'
