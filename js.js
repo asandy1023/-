@@ -42,9 +42,9 @@ function clickspan(f) {
   var menu = [];
   //var ad = ['A', 'B', 'C', 'D'];
   //menu
-
+  var key, count = 0;
   $.getJSON('restaurant.json', function (data) {
-    var key, count = 0;
+
     $.each(data.menu, function (i, d) {
 
       if (f == d.id) {
@@ -61,16 +61,18 @@ function clickspan(f) {
             " " + d[y] + " " + '<a id="iton_name_' + y
             + '" style="white-space:nowrap;"></a><button type="button" class="btn btn-primary" onclick="itonplus(' + y + ');"> + </button></p>'
           $(tblRow).appendTo("#menu");
-          console.log(1);
+
         }
 
       }
     });
+  });
+  $.getJSON('restaurant.json', function (data) {
     $.each(data.price, function (i, d) {
       if (f == d.id) {
         for (var y = 1; y < count - 1; y++) {
-          var aa=d[y];
-          $(Number(aa)).appendTo("#iton_name_"+y+"");
+    
+          $("d[y]").appendTo("#iton_name_"+y);
 
         }
       }
