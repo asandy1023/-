@@ -13,7 +13,6 @@ function enterstore() {
 
 }
 
-
 /*var fso = new ActiveXObject(Scripting.FileSystemObject);
 var f = fso.createtextfile("aa.txt", 2, true);*/
 
@@ -52,9 +51,9 @@ function clickspan(f) {
         }
         for (var y = 1; y < count - 1; y++) {
 
-          var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" >' 
-          + '<button type="button" class="btn btn-primary" onclick="itonminus(' + y + ');"> - </button>' 
-          + d[y] + '<button type="button" class="btn btn-primary" onclick="itonplus(' + y + ');"> + </button></p>'
+          var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" >'
+            + '<button type="button" class="btn btn-primary" onclick="itonminus(' + y + ');"> - </button>'
+            + " " + d[y] + " " + '<button type="button" class="btn btn-primary" onclick="itonplus(' + y + ');"> + </button></p>'
           $(tblRow).appendTo("#menu");
           console.log(1);
         }
@@ -78,38 +77,36 @@ for (var zero = 0; zero < 100; zero++) {
   menu_amount[zero] = 0;
 }
 
-
 function itonplus(y) {
   menu_amount[y]++;
 
   //var fso = new ActiveXObject(Scripting.FileSystemObject);
   //var f = fso.opentextfile("aa.txt", 1, true);
   //times++;
-
+  $(".partb").hide();
   console.log(y);
   updata(y);
+  $(".partb").show();
 }
 
 function itonminus(y) {
-  menu_amount[y]--;
-
+  if (menu_amount[y] > 0) menu_amount[y]--;
+  else;
   //var fso = new ActiveXObject(Scripting.FileSystemObject);
   //var f = fso.opentextfile("aa.txt", 1, true);
   //times++;
-
+  $(".partb").hide();
   console.log(y);
   updata(y);
+  $(".partb").show();
 }
 
 function updata(y) {
 
   $("#item").empty();
-  $("#購物車").show();
 
   $.getJSON('restaurant.json', function (data) {
     $.each(data.menu, function (i, d) {
-
-
 
       if (ff == d.id) {
         for (var u = new Number(1); u < 100; u++) {
@@ -121,25 +118,18 @@ function updata(y) {
 
         }
 
-
       }
-
-
       /*var gg = "ABCDEFG";
       for (var y = 0; y < 6; y++) {
           var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" onclick="itonplus()">' + gg[y] + '</p>'
           $(tblRow).appendTo("#menu");
       }*/
-
-
     });
 
   });
 
-
-
-
-
-
-
+}
+function shopping_car_click(){
+  var item_txt=document.getElementById("#item").innerHTML;
+  
 }
