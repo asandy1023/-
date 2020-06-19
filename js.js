@@ -71,9 +71,8 @@ function clickspan(f) {
     $.each(data.price, function (i, d) {
       if (f == d.id) {
         for (var y = 1; y < count - 1; y++) {
-    
-          $("d[y]").appendTo("#iton_name_"+y);
-
+          var aa = '<a>'+" " + d[y] +"¥"+ '</a>'
+          $(aa).appendTo("#iton_name_"+y);
         }
       }
     });
