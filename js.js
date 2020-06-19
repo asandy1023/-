@@ -23,6 +23,7 @@ function clickspan(f) {
   $("#restaurantData").empty();
   $("#menu").empty();
   $("#item").empty();
+  $("#菜單").show();
   //a = [];
   //restaurantData
   $.getJSON('restaurant.json', function(data) {

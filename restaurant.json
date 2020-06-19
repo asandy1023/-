@@ -72,10 +72,10 @@
             "id": "10"
         },
         {
-            "name": "爭鮮迴轉壽司-斗六店",
-            "location": "640雲林縣斗六市民生南路67號",
-            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.2047901996502!2d120.53546274380962!3d23.704434845389425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec822f043b981%3A0x9a8a329cdf4d7f5b!2z54it6a6u6L-06L2J5aO95Y-4LeaWl-WFreW6lw!5e0!3m2!1szh-TW!2stw!4v1592558964930!5m2!1szh-TW!2stw",
-            "picture": "https://lh5.googleusercontent.com/p/AF1QipN0_3hcVyLP4Y2lPYmphlE7_UPihVJR_aq2nJU2=w408-h306-k-no",
+            "name": "熊匠壽喜燒",
+            "location": "640雲林縣斗六市大同路210-5號",
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5166.104430100289!2d120.5450500218556!3d23.712141317271048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140620fa2c7d2aab%3A0x10bbef52ac43f278!2z54aK5Yyg5aO95Zac54eS!5e0!3m2!1szh-TW!2stw!4v1592559400267!5m2!1szh-TW!2stw" ,
+            "picture": "https://lh5.googleusercontent.com/p/AF1QipM78LLEuhodr_Nx6OsM17WL6X-jEmYQeVVtAbJa=w408-h272-k-no",
             "id": "11"
         }
         ,
@@ -112,10 +112,10 @@
         }
         ,
         {
-            "name": "熊匠壽喜燒",
-            "location": "640雲林縣斗六市大同路210-5號",
-            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5166.104430100289!2d120.5450500218556!3d23.712141317271048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140620fa2c7d2aab%3A0x10bbef52ac43f278!2z54aK5Yyg5aO95Zac54eS!5e0!3m2!1szh-TW!2stw!4v1592559400267!5m2!1szh-TW!2stw" ,
-            "picture": "https://lh5.googleusercontent.com/p/AF1QipM78LLEuhodr_Nx6OsM17WL6X-jEmYQeVVtAbJa=w408-h272-k-no",
+            "name": "海村澎湖活海鮮餐廳-中式台年菜",
+            "location": "640雲林縣斗六市南京路430號",
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4344.104905677984!2d120.54399098916194!3d23.713756507912525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec831b35d910d%3A0xb502611c3e692c9b!2z5rW35p2R5r6O5rmW5rS75rW36a6u6aSQ5buzLeS4reW8j-WPsOW5tOiPnCDllpzlrrTlsL7niZnmmKXphZIg5ZyY6auU6IGa6aSQKOS6uuawo-W_heWQg-aOqOiWpik!5e0!3m2!1szh-TW!2stw!4v1592559785684!5m2!1szh-TW!2stw",
+            "picture": "https://lh5.googleusercontent.com/p/AF1QipO1S7nEwJclAXt4tlb_TBrJCPADssad-T0elQz_=w408-h403-k-no",
             "id": "16"
         }
         ,
@@ -144,11 +144,12 @@
         }
         ,
         {
-            "name": "海村澎湖活海鮮餐廳-中式台年菜",
-            "location": "640雲林縣斗六市南京路430號",
-            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4344.104905677984!2d120.54399098916194!3d23.713756507912525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec831b35d910d%3A0xb502611c3e692c9b!2z5rW35p2R5r6O5rmW5rS75rW36a6u6aSQ5buzLeS4reW8j-WPsOW5tOiPnCDllpzlrrTlsL7niZnmmKXphZIg5ZyY6auU6IGa6aSQKOS6uuawo-W_heWQg-aOqOiWpik!5e0!3m2!1szh-TW!2stw!4v1592559785684!5m2!1szh-TW!2stw",
-            "picture": "https://lh5.googleusercontent.com/p/AF1QipO1S7nEwJclAXt4tlb_TBrJCPADssad-T0elQz_=w408-h403-k-no",
+            "name": "爭鮮迴轉壽司-斗六店",
+            "location": "640雲林縣斗六市民生南路67號",
+            "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.2047901996502!2d120.53546274380962!3d23.704434845389425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec822f043b981%3A0x9a8a329cdf4d7f5b!2z54it6a6u6L-06L2J5aO95Y-4LeaWl-WFreW6lw!5e0!3m2!1szh-TW!2stw!4v1592558964930!5m2!1szh-TW!2stw",
+            "picture": "https://lh5.googleusercontent.com/p/AF1QipN0_3hcVyLP4Y2lPYmphlE7_UPihVJR_aq2nJU2=w408-h306-k-no",
             "id": "20"
+            
         }
     ],
     "menu": [
@@ -302,11 +303,11 @@
         {
             "id": "11",
             "max":"6",
-            "1": "咖哩滑蛋蝦仁",
-            "2": "泰式青木瓜排骨湯",
-            "3": "蝦醬空心菜",
-            "4": "檸檬香茅花枝",
-            "5": "泰式椒麻雞",
+            "1": "吃到飽：平日299元",
+            "2": "吃到飽：假日329元",
+            "3": "昆布白湯",
+            "4": "麻辣",
+            "5": "壽喜燒",
             "6": "原味月亮蝦餅",
             "7": "打拋豬",
             "8": "泰式皮蛋沙律",
@@ -370,18 +371,18 @@
         {
             "id": "15",
             "max":"6",
-            "1": "咖哩滑蛋蝦仁",
-            "2": "泰式青木瓜排骨湯",
-            "3": "蝦醬空心菜",
-            "4": "檸檬香茅花枝",
-            "5": "泰式椒麻雞",
-            "6": "原味月亮蝦餅",
-            "7": "打拋豬",
-            "8": "泰式皮蛋沙律",
-            "9": "泰式皮蛋沙律",
-            "10": "Q彈口感",
-            "11": "泰國長米",
-            "12": "白飯"
+            "1": "サーモン",
+            "2": "合鴨(チェリバレー種)",
+            "3": "かに蒲鉾",
+            "4": "穴子の蒲焼",
+            "5": "チャーシュー",
+            "6": "あじ",
+            "7": "焼き〆鯖",
+            "8": "タイ風バラマンディ",
+            "9": "ベビーホタテ",
+            "10": "北寄貝",
+            "11": "すしエビ",
+            "12": "子持ちにしん"
         }
         ,
         {
