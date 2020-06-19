@@ -129,7 +129,34 @@ function updata(y) {
   });
 
 }
-function shopping_car_click(){
-  var item_txt=document.getElementById("#item").innerHTML;
-  
+function shopping_car_click() {
+  var BlobBuilder = BlobBuilder || WebKitBlobBuilder || MozBlobBuilder;
+  var URL = URL || webkitURL || window;
+
+  function saveAs(blob, filename) {
+    var type = blob.type;
+    var force_saveable_type = 'application/octet-stream';
+    if (type && type != force_saveable_type) { // 強制下載，而非在瀏覽器中開啟
+      var slice = blob.slice || blob.webkitSlice || blob.mozSlice;
+      blob = slice.call(blob, 0, blob.size, force_saveable_type);
+    }
+
+    var url = URL.createObjectURL(blob);
+    var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+    save_link.href = url;
+    save_link.download = filename;
+
+    var event = document.createEvent('MouseEvents');
+    event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    save_link.dispatchEvent(event);
+    URL.revokeObjectURL(url);
+  }
+  var bb = new BlobBuilder;
+  bb.append('Hello, world!');
+  saveAs(bb.getBlob('text/plain;charset=utf-8'), 'shopping_car.txt');
+  /*var item_txt = document.getElementById("item").innerHTML;
+  var fso = new ActiveXObject(Scripting.FileSystemObject);
+  var f = fso.createtextfile("shopping_car.txt", 2, true);
+  f.writeLine(item_txt);
+  f.close();*/
 }
