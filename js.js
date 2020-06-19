@@ -44,10 +44,11 @@ function clickspan(f) {
   //menu
 
   $.getJSON('restaurant.json', function (data) {
+    var key, count = 0;
     $.each(data.menu, function (i, d) {
 
       if (f == d.id) {
-        var key, count = 0;
+
         for (key in d) {
           if (d.hasOwnProperty(key)) {
             count++;
@@ -55,21 +56,25 @@ function clickspan(f) {
         }
         for (var y = 1; y < count - 1; y++) {
 
-          var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" >'
-            + '<button type="button" class="btn btn-primary" onclick="itonminus(' + y + ');"> - </button>'
-            + " " + d[y] + " " + '<button type="button" class="btn btn-primary" onclick="itonplus(' + y + ');"> + </button></p>'
+          var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" >' +
+            '<button type="button" class="btn btn-primary" onclick="itonminus(' + y + ');"> - </button>' +
+            " " + d[y] + " " + '<a id="iton_name_' + y
+            + '" style="white-space:nowrap;"></a><button type="button" class="btn btn-primary" onclick="itonplus(' + y + ');"> + </button></p>'
           $(tblRow).appendTo("#menu");
           console.log(1);
         }
-        /*var gg = "ABCDEFG";
-        for (var y = 0; y < 6; y++) {
-            var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" onclick="itonplus()">' + gg[y] + '</p>'
-            $(tblRow).appendTo("#menu");
-        }*/
 
       }
     });
+    $.each(data.price, function (i, d) {
+      if (f == d.id) {
+        for (var y = 1; y < count - 1; y++) {
+          var aa=d[y];
+          $(Number(aa)).appendTo("#iton_name_"+y+"");
 
+        }
+      }
+    });
   });
   //f.close();
 }
@@ -137,7 +142,7 @@ function shopping_car_click() {
 
   $('.bg').remove();
   $('.A0').show();
-  
+
 
   $.getJSON('restaurant.json', function (data) {
     $.each(data.menu, function (i, d) {
@@ -162,7 +167,7 @@ function shopping_car_click() {
     $.each(data.restaurant, function (i, d) {
       if (ff == d.id) {
         var tblRow = '<div class="row"style="padding-top:10px;" > <iframe src= ' + d.map +
-          ' frameborder=0 style="border:0; width:500px;height:500px;" allowfullscreen= aria-hidden=false tabindex="0"></iframe></div>' 
+          ' frameborder=0 style="border:0; width:500px;height:500px;" allowfullscreen= aria-hidden=false tabindex="0"></iframe></div>'
         $(tblRow).appendTo("#A2-1");
       }
     });
@@ -202,6 +207,6 @@ function shopping_car_click() {
 
 
 }
-function fu_ck(){
- alert("R");
+function fu_ck() {
+  alert("R");
 }
