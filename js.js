@@ -5,7 +5,7 @@ function enterstore() {
   $.getJSON('restaurant.json', function (data) {
     $.each(data.restaurant, function (i, f) {
       var tblRow = '<span class="thisspan" onclick="clickspan(' + f.id + ')"><div style="margin-top:60px;width=600px; border-radius:10px;" class=row>' + "<img width=500 height=500 src=" + f.picture + " class=img-thumbnail col-6>" + " </img>" +
-        '<h3 style=" padding-bottom:40px;">' + f.name + "<br>" + f.location + "</h3>" /*+ "<p>" + f.location + "</p>"*/ + "</div></span>" /*+ "<div><iframe src= " + f.map + " width=600 height=450 frameborder=0 style=border:0; allowfullscreen= aria-hidden=false tabindex=0></iframe></div>"*/
+        '<h3 style="padding-left:50px ; padding-top:40px;">' + f.name + "<br>" + f.location + "</h3>" /*+ "<p>" + f.location + "</p>"*/ + "</div></span>" /*+ "<div><iframe src= " + f.map + " width=600 height=450 frameborder=0 style=border:0; allowfullscreen= aria-hidden=false tabindex=0></iframe></div>"*/
       $(tblRow).appendTo("#restaurantData");
     });
 
@@ -28,8 +28,8 @@ function clickspan(f) {
   $.getJSON('restaurant.json', function (data) {
     $.each(data.restaurant, function (i, d) {
       if (f == d.id) {
-        var tblRow = '<span class="thisspan" onclick="clickspan(' + d.id + ')"><div class="row">' + "<img src=" + d.picture + " class=img-thumbnail col-6>" + " </img>" +
-          "<h3 col-2 style=padding-bottom:40px;>" + d.name + "</h3>" + "<p col-4 style=padding-bottom:40px;>" + d.location + "</p>" + "</div></span>" + "<div><iframe src= " + d.map + " width=600 height=450 frameborder=0 style=border:0; allowfullscreen= aria-hidden=false tabindex=0></iframe></div>"
+        var tblRow = '<span class="thisspan" onclick="clickspan(' + d.id + ')"><div class="row">' + '<div style="padding-left:15px;"><img src=' + d.picture + ' class=img-thumbnail col-6>" + " </img></div>' +
+          "<h3 col-2 style=padding-top:40px;padding-left:10px;>" + d.name + "</h3>" +'<br><p col-4  style="padding-top:45px;padding-left:10px;">' + d.location + "</p>" + "</div></span>" + '<div style="padding-top:30px;padding-left:0px;"><iframe src= ' + d.map + ' width=600 height=450 frameborder=0 style="border:0;" allowfullscreen= aria-hidden=false tabindex="0"></iframe></div>'
         $(tblRow).appendTo("#restaurantData");
       }
     });
@@ -84,7 +84,7 @@ function itonplus(y) {
   //var f = fso.opentextfile("aa.txt", 1, true);
   //times++;
   $(".partb").hide();
-  console.log(y);
+  //console.log(y);
   updata(y);
   $(".partb").show();
 }
@@ -96,7 +96,7 @@ function itonminus(y) {
   //var f = fso.opentextfile("aa.txt", 1, true);
   //times++;
   $(".partb").hide();
-  console.log(y);
+  //console.log(y);
   updata(y);
   $(".partb").show();
 }
@@ -161,15 +161,4 @@ function shopping_car_click() {
   f.close();*/
 
   
-
-$.ajax({
-type: "post",
-data: {
-"method": "write",
-"name": "Wayne",
-"sex": "male",
-"remark": "測試寫入功能"
-},
-url: "https://script.google.com/macros/s/AKfycbzvQhviJv1HbWol_fy406IiurzTgNiAg8tdsYCNuKZK_XY11kk/exec" // 填入網路應用程式網址
-});
 }

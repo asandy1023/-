@@ -13,6 +13,30 @@
             "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233582.2571280147!2d120.41457046454853!3d23.82845541155296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec9227bce18c5%3A0x2847816cba0d9d72!2z6aCG6aKo6Zue5o6S4oCU6Zuy5p6X5paX5YWt5bqX!5e0!3m2!1szh-TW!2stw!4v1591533089883!5m2!1szh-TW!2stw",
             "picture": "https://lh3.googleusercontent.com/u0OeAwRpGi-udLwqzuOflM9Asvm0bnJMnMdE28xRYw5bBpR4sMSoXPZff3x4QBf_QkZqfUjFvJF6PAsb=w768-h768-n-o-v1",
             "id": "2"
+        },{
+            "name": "肯德基KFC-斗六民生餐廳",
+            "location": "640雲林縣斗六市民生南路169號",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4344.456922599049!2d120.53791292373005!3d23.703184446206894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec83af9b1ef2f%3A0xe5cbef678773958!2z6IKv5b635Z-6S0ZDLeaWl-WFreawkeeUn-mkkOW7sw!5e0!3m2!1szh-TW!2stw!4v1592557698073!5m2!1szh-TW!2stw",
+            "picture": "https://lh5.googleusercontent.com/p/AF1QipOiLgTeePlpKW8z8-4yf-JGrEeC53JVpFN4uJ4E=w425-h240-k-no",
+            "id": "3"
+        },{
+            "name": "Pizza Factory-披薩工廠斗六廠",
+            "location": "640雲林縣斗六市永昌西街48號",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4344.456922599049!2d120.53791292373005!3d23.703184446206894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec8229080b87f%3A0x4e032ebfb8e686d7!2zUGl6emEgRmFjdG9yeS3miqvolqnlt6Xlu6Dmlpflha3lu6A!5e0!3m2!1szh-TW!2stw!4v1592557855317!5m2!1szh-TW!2stw",
+            "picture": "https://lh5.googleusercontent.com/p/AF1QipMTQ3CkpBEjLBypXS5mW7SvXbEqHAsx_Qml4ucW=w408-h306-k-no",
+            "id": "4"
+        },{
+            "name": "椰香天堂泰式創意料理餐廳",
+            "location": "640雲林縣斗六市中堅西路577號",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.301782239047!2d120.53239135089538!3d23.700914884538303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x841358c0ae476247!2z5qSw6aaZ5aSp5aCC5rOw5byP5Ym15oSP5paZ55CG6aSQ5buz!5e0!3m2!1szh-TW!2stw!4v1592557973792!5m2!1szh-TW!2stw",
+            "picture": "https://lh5.googleusercontent.com/p/AF1QipNeV0yrzMvQ0rddggNCl1eC37pCbzfcNUYUZu85=w426-h240-k-no",
+            "id": "5"
+        },{
+            "name": "雞排本色",
+            "location": "640雲林縣斗六市中山路284號",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14614.287678845742!2d120.53942269794716!3d23.691262107790525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec9951a4d5e3d%3A0xd9bbfd60837b33ec!2z6Zue5o6S5pys6ImyIC0g5paX5YWt5Lit5bGx5bqX!5e0!3m2!1szh-TW!2stw!4v1591524121790!5m2!1szh-TW!2stw",
+            "picture": "https://lh5.googleusercontent.com/p/AF1QipNdpNM3z-AIw8hT89mkWitQVM4sriQL50CvRjg5=w426-h240-k-no",
+            "id": "6"
         }
     ],
     "menu": [
