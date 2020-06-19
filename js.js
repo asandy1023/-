@@ -130,7 +130,7 @@ function updata(y) {
 
 }
 function shopping_car_click() {
-  var BlobBuilder = BlobBuilder || WebKitBlobBuilder || MozBlobBuilder;
+  /*var BlobBuilder = BlobBuilder || WebKitBlobBuilder || MozBlobBuilder;
   var URL = URL || webkitURL || window;
 
   function saveAs(blob, filename) {
@@ -153,10 +153,23 @@ function shopping_car_click() {
   }
   var bb = new BlobBuilder;
   bb.append('Hello, world!');
-  saveAs(bb.getBlob('text/plain;charset=utf-8'), 'shopping_car.txt');
+  saveAs(bb.getBlob('text/plain;charset=utf-8'), 'shopping_car.txt');*/
   /*var item_txt = document.getElementById("item").innerHTML;
   var fso = new ActiveXObject(Scripting.FileSystemObject);
   var f = fso.createtextfile("shopping_car.txt", 2, true);
   f.writeLine(item_txt);
   f.close();*/
+
+  
+
+$.ajax({
+type: "post",
+data: {
+"method": "write",
+"name": "Wayne",
+"sex": "male",
+"remark": "測試寫入功能"
+},
+url: "https://script.google.com/macros/s/AKfycbzvQhviJv1HbWol_fy406IiurzTgNiAg8tdsYCNuKZK_XY11kk/exec" // 填入網路應用程式網址
+});
 }
