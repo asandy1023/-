@@ -26,16 +26,16 @@ function clickspan(f) {
   $("#菜單").show();
   //a = [];
   //restaurantData
-  $.getJSON('restaurant.json', function(data) {
-    $.each(data.restaurant, function(i, d) {
-        if (f == d.id) {
-            var tblRow = '<div class="row"style="padding-top:10px;" > <img src=' + d.picture +
-                ' class=img-thumbnail col-6></img><iframe src= ' + d.map +
-                ' width=600 height=450 frameborder=0 style="border:0;" allowfullscreen= aria-hidden=false tabindex="0"></iframe></div>' +
-                '<div class="col"><h3 col-2 style=padding-top:40px;padding-left:10px;>' + d.name +
-                "</h3>" + '<a col-4  style="padding-top:45px;padding-left:10px;">' + d.location + "</a>" + "</div>"
-            $(tblRow).appendTo("#restaurantData");
-        }
+  $.getJSON('restaurant.json', function (data) {
+    $.each(data.restaurant, function (i, d) {
+      if (f == d.id) {
+        var tblRow = '<div class="row"style="padding-top:10px;" > <img src=' + d.picture +
+          ' class=img-thumbnail col-6></img><iframe src= ' + d.map +
+          ' width=600 height=450 frameborder=0 style="border:0;" allowfullscreen= aria-hidden=false tabindex="0"></iframe></div>' +
+          '<div class="col"><h3 col-2 style=padding-top:40px;padding-left:10px;>' + d.name +
+          "</h3>" + '<a col-4  style="padding-top:45px;padding-left:10px;">' + d.location + "</a>" + "</div>"
+        $(tblRow).appendTo("#restaurantData");
+      }
     });
 
   });
@@ -134,14 +134,33 @@ function updata(y) {
 
 }
 function shopping_car_click() {
-  $("#restaurantData").empty();
-  $("#menu").empty();
-  $("#item").empty();
-  $("#購物車").empty();
-  $("#購物車_送出").empty();
-  var yourorder = "您的訂單";
-  $(yourorder).appendTo("#item");
- 
+
+  $('.bg').remove();
+  $('.A0').show();
+  
+
+  $.getJSON('restaurant.json', function (data) {
+    $.each(data.menu, function (i, d) {
+
+      if (ff == d.id) {
+        for (var u = new Number(1); u < 100; u++) {
+
+          if (menu_amount[u] != 0) {
+            var tblRow = '<p style=" padding-bottom:40px;font-size:30px;">' + d[u] + "數量:" + menu_amount[u] + '</p>'
+            $(tblRow).appendTo("#A1-2-1");
+          }
+
+        }
+
+      }
+      /*var gg = "ABCDEFG";
+      for (var y = 0; y < 6; y++) {
+          var tblRow = '<p style=" padding-bottom:40px;" id="iton' + y + '" onclick="itonplus()">' + gg[y] + '</p>'
+          $(tblRow).appendTo("#menu");
+      }*/
+    });
+
+  });
 
 
   /*var BlobBuilder = BlobBuilder || WebKitBlobBuilder || MozBlobBuilder;

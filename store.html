@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
@@ -31,16 +32,18 @@
     .partb {
       background-image: url('/pic/menu_picture.jpg');
     }
-    .bg{
+
+    .bg {
       background-image: url('/pic/background.png');
     }
+
   </style>
   <script>
     $(document).ready(function () {
       enterstore();
       $(".partb").hide();
       $("#菜單").hide();
-
+      $('.A0').hide();
       /*var parameter = {
         url: 'https://docs.google.com/spreadsheets/d/1YqF8ZS5qDU1VXzVALCkiXGlQkrXxcd0JQCVqmkxcUeY/edit#gid=0',
         name: '工作表1',
@@ -94,18 +97,50 @@
     <div id="parta" class=" col-6">
       <div id="restaurantData" class=""></div>
       <br>
-      <div id="菜單" class="購物車_class" style="padding-left: 109px;padding-top:50px;"><h2>菜單</h2></div>
+      <div id="菜單" class="購物車_class" style="padding-left: 109px;padding-top:50px;">
+        <h2>菜單</h2>
+      </div>
       <div id="menu" class=""
         style=" padding-left: 70px; padding-top: 20px; background-image: url('\pic\menu_picture.jpg');"></div>
     </div>
     <div id="partb" class="col-6 partb" style="padding-left: 200px;padding-right: 30px;padding-top: 200px;">
       <h1 id="購物車" class="購物車_class" style="position: relative;bottom: 30px; left:60px ;">購物車</h1>
-      <div id="item" class="" style="position: relative;top: 30px;left: 50px;"></div>
+      <p id="item" class="" style="position: relative;top: 30px;left: 50px;"></p>
       <button id="購物車_送出" class="購物車_class btn btn-primary" onclick="shopping_car_click()"
-       style=" width: 250px; height: 40px; position: relative;top: 60px; left: 70px;">送出~</button>
+        style=" width: 250px; height: 40px; position: relative;top: 60px; left: 70px;">送出~</button>
     </div>
   </div>
 
+
+
+
+
+
+
+  <div id="A0" class="A0" style="padding-top: 20px;padding-left: 20px;padding-right:20px ; padding-bottom:20px ;">
+    <div id="A1" class=" row">
+      <div id="A1-1" class=" col-6"
+        style="padding-top: 20px;padding-left: 20px;padding-right:20px ; padding-bottom:0px ; text-align: center;">
+        <img  src="/pic/fupu.jpeg" alt="">
+        <p style="padding-top: 20px; text-align: center;">永遠不會運輸到...</p>
+      </div>
+      <div class=" col-1"></div>
+      <div id="A1-2" class=" col-5"
+        style=" padding-top: 60px;padding-left: 30px;padding-right:90px ; padding-bottom:0px ; text-align: center;">
+        <div id="A1-2-1" class="border border-warning  rounded rounded-lg"
+          style=" padding-top: 40px;padding-left: 40px;padding-right:0px ; padding-bottom:0px ; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div id="A2">
+      <div id="A2-1">
+
+      </div>
+      <div id="A2-2">
+
+      </div>
+    </div>
+  </div>
 
 </body>
 
