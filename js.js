@@ -29,7 +29,7 @@ function clickspan(f) {
     $.each(data.restaurant, function (i, d) {
       if (f == d.id) {
         var tblRow = '<span class="thisspan" onclick="clickspan(' + d.id + ')"><div class="row">' + '<div style="padding-left:15px;"><img src=' + d.picture + ' class=img-thumbnail col-6>" + " </img></div>' +
-          "<h3 col-2 style=padding-top:40px;padding-left:10px;>" + d.name + "</h3>" +'<br><p col-4  style="padding-top:45px;padding-left:10px;">' + d.location + "</p>" + "</div></span>" + '<div style="padding-top:30px;padding-left:0px;"><iframe src= ' + d.map + ' width=600 height=450 frameborder=0 style="border:0;" allowfullscreen= aria-hidden=false tabindex="0"></iframe></div>'
+          "<h3 col-2 style=padding-top:40px;padding-left:10px;>" + d.name + "</h3>" + '<br><p col-4  style="padding-top:45px;padding-left:10px;">' + d.location + "</p>" + "</div></span>" + '<div style="padding-top:30px;padding-left:0px;"><iframe src= ' + d.map + ' width=600 height=450 frameborder=0 style="border:0;" allowfullscreen= aria-hidden=false tabindex="0"></iframe></div>'
         $(tblRow).appendTo("#restaurantData");
       }
     });
@@ -130,6 +130,16 @@ function updata(y) {
 
 }
 function shopping_car_click() {
+  $("#restaurantData").empty();
+  $("#menu").empty();
+  $("#item").empty();
+  $("#購物車").empty();
+  $("#購物車_送出").empty();
+  var yourorder = "您的訂單";
+  $(yourorder).appendTo("#item");
+ 
+
+
   /*var BlobBuilder = BlobBuilder || WebKitBlobBuilder || MozBlobBuilder;
   var URL = URL || webkitURL || window;
 
@@ -160,5 +170,5 @@ function shopping_car_click() {
   f.writeLine(item_txt);
   f.close();*/
 
-  
+
 }
