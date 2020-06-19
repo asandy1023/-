@@ -159,6 +159,13 @@ function shopping_car_click() {
           $(tblRow).appendTo("#menu");
       }*/
     });
+    $.each(data.restaurant, function (i, d) {
+      if (ff == d.id) {
+        var tblRow = '<div class="row"style="padding-top:10px;" > <iframe src= ' + d.map +
+          ' frameborder=0 style="border:0; width:500px;height:500px;" allowfullscreen= aria-hidden=false tabindex="0"></iframe></div>' 
+        $(tblRow).appendTo("#A2-1");
+      }
+    });
 
   });
 
@@ -194,4 +201,7 @@ function shopping_car_click() {
   f.close();*/
 
 
+}
+function fu_ck(){
+ alert("R");
 }
